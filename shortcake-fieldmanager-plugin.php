@@ -24,7 +24,7 @@ add_action( 'init', function() {
 	// Add fieldmanager fields if plugin is available.
 	if ( class_exists( 'Fieldmanager_Field' ) ) {
 		require_once dirname( __FILE__ ) . '/class-shortcake-fields-fieldmanager.php';
-		$fieldmanager = Shortcode_UI_Fields_Fieldmanager::get_instance();
+		$fieldmanager = Shortcake_Fields_Fieldmanager::get_instance();
 	}
 
 }, 5 );
